@@ -29,6 +29,7 @@
 
 	<groupId>org.jadira.usertype</groupId>
 	<artifactId>usertype.core</artifactId>
+  <version>3.1.0.CR8-cru-dst-fix</version>
 	<packaging>jar</packaging>
 
 	<name>Jadira Usertype Core (for Joda Time, Joda Money, Libphonenum and JDK Types with Hibernate)</name>
@@ -41,7 +42,7 @@
 				<artifactId>jadira.depmgmt</artifactId>
 				<type>pom</type>
 				<scope>import</scope>
-				<version>${project.version}</version>
+				<version>${project.parent.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -100,12 +101,12 @@
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.spi</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.spi</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
@@ -113,7 +114,7 @@
 		<dependency>
 			<groupId>org.jadira.cdt</groupId>
 			<artifactId>cdt</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 			<optional>true</optional>
 		</dependency>
 		
